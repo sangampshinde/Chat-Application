@@ -1,9 +1,11 @@
 const express = require('express');
 // require("dotenv").config();
 const dotenv = require('dotenv');
+const mongoose = require('mongoose');
+
 dotenv.config();
 
-
+mongoose.connect(process.env.MONGO_URL);
 
 
 const app = express();
