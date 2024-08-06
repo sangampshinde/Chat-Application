@@ -7,17 +7,11 @@ const router = express.Router();
 // Routes
 
 //login
-router.get('/login',(req,res)=>{
-    res.send("login");
-});
+router.get('/login');
 // signup
-router.get('/signup',(req,res)=>{
-    res.send("login");
-});
+router.get('/signup');
 // logout
-router.get('/logout',(req,res)=>{
-    res.send("login");
-});
+router.get('/logout');
 
 
 
