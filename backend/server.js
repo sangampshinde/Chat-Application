@@ -5,16 +5,21 @@ import dotenv from "dotenv"
 import authRoutes from '../backend/routes/auth.route.js'
 import connectToMongooDB from './db/connectToMongoDB.js';
 
-
 dotenv.config();
 const app = express();
 
-
 const PORT = process.env.PORT || 5000
+
+// postman middleware
+app.use(express.json()); //to get data from req.body in JSON format.
+
+
+
 
 
 // middleware
 app.use("/api/auth",authRoutes);
+
 
 
 
