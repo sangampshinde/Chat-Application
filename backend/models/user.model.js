@@ -25,7 +25,9 @@ const userSchema = new mongoose.Schema({
         default: "default.jpg",
     },
 
-});
+},
+// createdAt and updatedAt
+{timestamps: true});
 
 const User = mongoose.model('User', userSchema);
 
