@@ -1,5 +1,6 @@
 import express from 'express';
 import dotenv from "dotenv"
+import cookieParser from 'cookie-parser';
 
 // routes imports
 import authRoutes from '../backend/routes/auth.route.js'
@@ -13,6 +14,7 @@ const PORT = process.env.PORT || 5000
 
 // postman middleware
 app.use(express.json()); //to get data from req.body in JSON format.
+app.use(cookieParser()); //to get data from cookie in JSON format
 
 
 
